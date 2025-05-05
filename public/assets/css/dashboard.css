@@ -1,0 +1,28 @@
+.table-custom {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e9fbe7;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}
+
+.table-custom th {
+    background-color: #004c6e;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-custom td {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f4f4ff;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #d4f8cb;
+    transition: 0.3s;
+}
+body {
+    background: url('https://www.transparenttextures.com/patterns/cubes.png') repeat;
+    background-color: #f8f9fa;
+}

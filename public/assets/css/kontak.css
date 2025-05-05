@@ -1,0 +1,43 @@
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
+    font-weight: 500;
+}
+.nav-link {
+    transition: all 0.3s ease;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #9f57bd;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+}
+.kontak-section {
+    background-color: #f8f9fa;
+}
+.kontak-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.kontak-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+.kontak-box {
+    border: 2px solid #28a745;
+    border-radius: 40px;
+    padding: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.kontak-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.kontak-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}

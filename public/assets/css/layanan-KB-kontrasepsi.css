@@ -1,0 +1,128 @@
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
+    font-weight: 500;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #9f57bd;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/detail_layanan/hero/img-KB-kontrasepsi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(1, 1, 3)3%, rgba(255, 255, 255, 0)25%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: 1rem;
+    line-height: 1.2;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    mix-blend-mode: difference;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-deskripsi {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-deskripsi .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-deskripsi img {
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-deskripsi p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.section-deskripsi a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #bb2d3b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.section-deskripsi a:hover {
+    background-color: #ff2424ef;
+}
+
+.jadwal-harga .card {
+    border-radius: 12px;
+    border: none;
+}
+
+.jadwal-harga .card-body {
+    padding: 20px;
+}
+
+.jadwal-harga .harga-range {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b0c36;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .section-deskripsi .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}

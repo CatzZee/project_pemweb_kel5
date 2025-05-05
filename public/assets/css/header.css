@@ -1,0 +1,33 @@
+
+.bg-gradient-custom {
+  background: linear-gradient(to right, #0f172a, #1e3a8a);
+}
+
+.navbar .nav-link {
+  color: #e2e8f0;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #60a5fa;
+}
+
+.dropdown-menu {
+  background-color: #1e293b;
+  border: none;
+}
+
+.dropdown-item {
+  color: #f8fafc;
+}
+
+.dropdown-item:hover {
+  background-color: #334155;
+  color: #93c5fd;
+}
+
+.navbar-brand span {
+  font-size: 1.2rem;
+  color: #f1f5f9;
+}
