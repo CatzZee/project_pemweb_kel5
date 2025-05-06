@@ -22,7 +22,6 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../images/detail_layanan/hero/img-lahir-nifas.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,7 +33,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgb(1, 1, 3)3%, rgba(255, 255, 255, 0)25%);
+    background: linear-gradient(0deg, rgb(1, 1, 3)3%, rgba(255, 255, 255, 0) 25%);
 }
 
 .hero .content {
@@ -90,7 +89,6 @@
 .section-deskripsi a {
     font-size: 1rem;
     padding: 10px 20px;
-    background-color: #bb2d3b;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -98,9 +96,6 @@
     margin-top: 20px;
 }
 
-.section-deskripsi a:hover {
-    background-color: #ff2424ef;
-}
 
 .jadwal-harga .card {
     border-radius: 12px;
