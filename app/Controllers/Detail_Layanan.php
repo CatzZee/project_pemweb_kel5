@@ -1,24 +1,48 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\GambarDetailLayananModel;
 class Detail_Layanan extends BaseController
 {
     public function layanan1()
     {
-        return view('Detail_Layanan/layanan-lahir-nifas');
+        $gambarDetailLayanan = new GambarDetailLayananModel();
+        $data = [
+            'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
+            'pages' => 'Layanan Lahir dan Nifas',
+            'title' => 'Layanan Lahir dan Nifas'
+        ];
+        return view('Detail_Layanan/layanan-lahir-nifas', $data);
     }
 
     public function layanan3()
     {
-        return view('Detail_Layanan/layanan-salin-normal');
+        $gambarDetailLayanan = new GambarDetailLayananModel();
+        $data = [
+            'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
+            'pages' => 'Layanan Lahir dan Nifas',
+            'title' => 'Layanan Lahir dan Nifas'
+        ];
+        return view('Detail_Layanan/layanan-salin-normal', $data);
     }
     public function layanan4()
     {
-        return view('Detail_Layanan/layanan-hamil');
+        $gambarDetailLayanan = new GambarDetailLayananModel();
+        $data = [
+            'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
+            'pages' => 'Layanan Kehamilan',
+            'title' => 'Layanan Kehamilan'
+        ];
+        return view('Detail_Layanan/layanan-hamil', $data);
     }
     public function layanan5()
     {
-        return view('Detail_Layanan/layanan-KB-kontrasepsi');
+        $gambarDetailLayanan = new GambarDetailLayananModel();
+        $data = [
+            'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
+            'pages' => 'Layanan KB dan Kontrasepsi',
+            'title' => 'Layanan KB dan Kontrasepsi'
+        ];
+        return view('Detail_Layanan/layanan-KB-kontrasepsi', $data);
     }
 }
