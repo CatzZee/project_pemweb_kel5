@@ -199,7 +199,7 @@
                                     <img src="<?= base_url($detail_layanan['path'] . $detail_layanan['nama_file']) ?>" alt="<?= esc($detail_layanan['foto']) ?>" width="100" class="img-thumbnail">
                                 </td>
                                 <td> <?= esc($detail_layanan['foto']) ?> </td>
-                                <td> jasa layanan </td>
+                                <td> detail layanan </td>
                                 <td>
                                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= esc($detail_layanan['nama_file']) ?>">Edit Gambar</button>
                                     <div class="modal fade" id="<?= esc($detail_layanan['nama_file']) ?>" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
@@ -235,7 +235,7 @@
                                         <img src="<?= base_url($logo['path'] . $logo['nama_file']) ?>" alt="<?= esc($logo['foto']) ?>" width="100" class="img-thumbnail">
                                     </td>
                                     <td> <?= esc($logo['foto']) ?> </td>
-                                    <td> jasa layanan </td>
+                                    <td> Logo </td>
                                     <td>
                                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= esc($logo['nama_file']) ?>">Edit Gambar</button>
                                         <div class="modal fade" id="<?= esc($logo['nama_file']) ?>" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
