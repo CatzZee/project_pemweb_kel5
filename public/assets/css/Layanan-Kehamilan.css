@@ -22,19 +22,20 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../images/detail_layanan/hero/imgpersalinan.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .hero::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgb(1, 1, 3)3%, rgba(255, 255, 255, 0)25%);
+    background: linear-gradient(0deg,
+            rgb(1, 1, 3) 3%,
+            rgba(255, 255, 255, 0) 25%);
 }
 
 .hero .content {
@@ -75,31 +76,30 @@
     gap: 30px;
 }
 
+.section-deskripsi .section-title {
+    font-weight: bold;
+    font-size: 28px;
+}
+
 .section-deskripsi img {
-    max-width: 400px;
-    border-radius: 8px;
+    max-width: 100%;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section-deskripsi p {
-    font-size: 1.125rem;
-    color: #555;
+    font-size: 16px;
     line-height: 1.6;
 }
 
 .section-deskripsi a {
     font-size: 1rem;
     padding: 10px 20px;
-    background-color: #bb2d3b;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
-}
-
-.section-deskripsi a:hover {
-    background-color: #ff2424ef;
 }
 
 .jadwal-harga .card {
@@ -118,12 +118,9 @@
     line-height: 1.4;
 }
 
-
-@media (max-width: 768px) {
-    .section-deskripsi .container {
-        flex-direction: column;
-        text-align: center;
+@media (min-width: 768px) {
+    .jadwal-container {
+        flex-direction: row;
+        justify-content: space-around;
     }
-
-
 }
