@@ -56,7 +56,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end shadow-sm">
                                 <li><a class="dropdown-item" href="<?= base_url('Kontak') ?>">Kontak</a></li>
-                                <li><a class="dropdown-item" href="<?= base_url('login') ?>">Login</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('Login') ?>">Login</a></li>
                             </ul>
                         </li>
                     </ul>

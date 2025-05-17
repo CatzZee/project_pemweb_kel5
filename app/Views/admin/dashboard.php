@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="<?= base_url('assets/uploads/logo/favicon.ico') ?>" type="image/x-icon">
     <title>Dashboard</title>
 </head>
 
 <body>
     <!-- header ya -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-gradient-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom shadow-sm py-3">
             <div class="container">
-                <a class="navbar-brand fw-bold text-light" href="<?= base_url('dashboard') ?>">Praktek Mandiri</a>
+                <a class="navbar-brand fw-bold text-light" href="<?= base_url('/Dashboard') ?>">Praktek Mandiri</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link nav-custom <?= (uri_string() == 'dashboard') ? 'active' : '' ?>" href="<?= base_url('dashboard') ?>">
+                            <a class="nav-link nav-custom <?= (uri_string() == 'Dashboard') ? 'active' : '' ?>" href="<?= base_url('Dashboard') ?>">
                                 <i class="bi bi-house-door me-1"></i> Dashboard
                             </a>
                         </li>
