@@ -51,7 +51,7 @@ if (isset($gambarTentangKami[1])) {
 </section>
 <section class="faq-section py-5 bg-white" id="faq">
     <div class="container">
-        <h2 class="section-title text-center mb-4">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+        <h2 class="section-title text-center mb-4">Pertanyaan yang Sering Diajukan</h2>
         <div class="accordion" id="accordionFAQ">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="faqHeadingOne">

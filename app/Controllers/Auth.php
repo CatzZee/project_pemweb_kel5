@@ -9,7 +9,12 @@ class Auth extends BaseController
 {
     public function login()
     {
-        return view('auth/login');
+        if (!session()->get('isLoggedIn')) {
+            return view('auth/login');
+        }else{
+            return redirect()->to('Dashboard');
+        }
+        
     }
 
     public function loginProcess()
@@ -26,7 +31,7 @@ class Auth extends BaseController
             if (password_verify($password, $user['password'])) {
                 $session->set('isLoggedIn', true);
                 $session->set('username', $user['username']);
-                return redirect()->to('/dashboard');
+                return redirect()->to('/Dashboard');
             } else {
                 return redirect()->back()->with('error', 'Password salah');
             }
@@ -39,6 +44,6 @@ class Auth extends BaseController
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/login');
+        return redirect()->to('/Login');
     }
 }

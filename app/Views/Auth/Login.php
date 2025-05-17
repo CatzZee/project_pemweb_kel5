@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login - WebKatalog</title>
+    <title>Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url('assets/css/header.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/login.css') ?>">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="<?= base_url('assets/uploads/logo/favicon.ico') ?>" type="image/x-icon">
 </head>
 
 <header class="position-absolute top-0 start-0 p-3">
-    <button onclick="history.back()" class="btn btn-outline-light d-flex align-items-center gap-2 shadow-sm rounded-pill px-3 py-2">
+    <a href="<?= base_url('Beranda') ?>" class="btn btn-outline-light d-flex align-items-center gap-2 shadow-sm rounded-pill px-3 py-2">
         <i class="bi bi-arrow-left fs-5"></i>
         <span class="fw-semibold">Back</span>
-    </button>
+    </a>
 </header>
 
 <body class="bg-light d-flex align-items-center" style="height: 100vh;">
