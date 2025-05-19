@@ -27,36 +27,61 @@ class Upload extends BaseController
             if ($folder == 'beranda') {
                 $file->move($path, $namabaru, true);
                 $berandaModel = new GambarBerandaModel();
+                // ini untuk hapus file foto lama agar tidak memnuhi resource
+                $namalama = $berandaModel->select('nama_file')
+                    ->where('id', $id)
+                    ->first();
+                $path_lama = FCPATH . 'assets/uploads' . '/' . $folder . '/' . $namalama['nama_file'];
+                if (file_exists($path_lama)) {
+                    unlink($path_lama);
+                }
+                // ini logika untuk ubah data di table
                 $berandaModel->set('nama_file', $namabaru)
-                            ->where('id', $id)
-                            ->update();
+                    ->where('id', $id)
+                    ->update();
                 return redirect()->back()->with('success', 'Gambar Beranda berhasil diupload!');
-                // ini untuk logika klw upload gambar tentang_kami
                 
             } elseif ($folder == 'tentang_kami') {
                 $file->move($path, $namabaru, true);
                 $tentangKamiModel = new GambarTentangKamiModel();
+                $namalama = $tentangKamiModel->select('nama_file')
+                    ->where('id', $id)
+                    ->first();
+                $path_lama = FCPATH . 'assets/uploads' . '/' . $folder . '/' . $namalama['nama_file'];
+                if (file_exists($path_lama)) {
+                    unlink($path_lama);
+                }
                 $tentangKamiModel->set('nama_file', $namabaru)
-                            ->where('id', $id)
-                            ->update();
+                    ->where('id', $id)
+                    ->update();
                 return redirect()->back()->with('success', 'Gambar Tentang Kami berhasil diupload!');
-
-                // ini logika untuk jasa layanan
             } elseif ($folder == 'jasa_layanan') {
                 $file->move($path, $namabaru, true);
                 $jasaLayananModel = new GambarJasaLayananModel();
+                $namalama = $jasaLayananModel->select('nama_file')
+                    ->where('id', $id)
+                    ->first();
+                $path_lama = FCPATH . 'assets/uploads' . '/' . $folder . '/' . $namalama['nama_file'];
+                if (file_exists($path_lama)) {
+                    unlink($path_lama);
+                }
                 $jasaLayananModel->set('nama_file', $namabaru)
-                ->where('id', $id)
-                ->update();
+                    ->where('id', $id)
+                    ->update();
                 return redirect()->back()->with('success', 'Gambar Jasa Layanan berhasil diupload!');
-                
-                // ini logika untuk jasa layanan
             } elseif ($folder == 'detail_layanan') {
                 $file->move($path, $namabaru, true);
                 $detailLayananModel = new GambarDetailLayananModel();
+                $namalama = $detailLayananModel->select('nama_file')
+                    ->where('id', $id)
+                    ->first();
+                $path_lama = FCPATH . 'assets/uploads' . '/' . $folder . '/' . $namalama['nama_file'];
+                if (file_exists($path_lama)) {
+                    unlink($path_lama);
+                }
                 $detailLayananModel->set('nama_file', $namabaru)
-                            ->where('id', $id)
-                            ->update();
+                    ->where('id', $id)
+                    ->update();
                 return redirect()->back()->with('success', 'Gambar Jasa Layanan berhasil diupload!');
             } else {
                 return redirect()->back()->with('error', 'Format file harus JPG atau PNG!');

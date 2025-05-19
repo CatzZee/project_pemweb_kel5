@@ -13,13 +13,13 @@
     </style>
     <main class="content">
         <h1>Melayani Dengan Sepenuh Hati</h1>
-        <p>Selamat Datang</p>
+        <p>Perawatan Ibu dan Anak dengan Sentuhan Kasih.</p>
     </main>
 </section>
 <section class="container">
-    <h2 class="section-title">Layanan Paling Dicari</h2>
+    <h2 class="section-title fw-bold">Layanan Paling Dicari</h2>
     <div class="row justify-content-center">
-        <div class="col-md-3 layanan-item">
+        <div class="col-md-3 layanan-item" data-aos="zoom-in" data-aos-delay="200">
             <?php
             if (isset($gambarBeranda[3])) {
                 $gambar = $gambarBeranda[3];
@@ -29,7 +29,7 @@
             <h6>Pemeriksaan Kehamilan</h6>
         </div>
 
-        <div class="col-md-3 layanan-item">
+        <div class="col-md-3 layanan-item" data-aos="zoom-in" data-aos-delay="200">
             <?php
             if (isset($gambarBeranda[4])) {
                 $gambar = $gambarBeranda[4];
@@ -39,7 +39,7 @@
             <h6>Perawatan Bayi dan Ibu Nifas</h6>
         </div>
 
-        <div class="col-md-3 layanan-item">
+        <div class="col-md-3 layanan-item" data-aos="zoom-in" data-aos-delay="200">
             <?php
             if (isset($gambarBeranda[5])) {
                 $gambar = $gambarBeranda[5];
@@ -54,27 +54,27 @@
 <section class="bg-light py-5">
     <div class="container">
         <div class="row text-center">
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="text-danger fw-bold"><span id="count1">0</span>+</h2>
+            <div class="col-md-3 mb-4">
+                <h2 class="text-info-emphasis fw-bold"><span id="count1">0</span>+</h2>
                 <p>Pasien Dirawat</p>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="text-danger fw-bold"><span id="count2">0</span>+</h2>
+            <div class="col-md-3 mb-4">
+                <h2 class="text-info-emphasis fw-bold"><span id="count2">0</span>+</h2>
                 <p>Harga Mulai Dari</p>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <h2 class="text-danger fw-bold"><span id="count3">0</span>+</h2>
+            <div class="col-md-3 mb-4">
+                <h2 class="text-info-emphasis fw-bold"><span id="count3">0</span>+</h2>
                 <p>Kota Terjangkau</p>
             </div>
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <h2 class="text-danger fw-bold"><span id="count4">0</span>+</h2>
+            <div class="col-md-3 mb-4">
+                <h2 class="text-info-emphasis fw-bold"><span id="count4">0</span>+</h2>
                 <p>Pengalaman(Tahun)</p>
             </div>
         </div>
     </div>
 </section>
 <section class="komitmen-section">
-    <h2 class="section-title">Komitmen Kami</h5>
+    <h2 class="section-title fw-bold">Komitmen Kami</h5>
 
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
             <?php
@@ -102,7 +102,7 @@
                         <i class="bi bi-browser-chrome fs-1 text-primary"></i>
                     </div>
                     <h5 class="fw-bold mb-2">1. Buka Website</h5>
-                    <p class="text-muted">Kunjungi website resmi kami di <strong>www.ny.anisqoriah.com</strong>.</p>
+                    <p class="text-muted">Kunjungi website resmi kami di <strong>anisqoriah.com</strong>.</p>
                 </div>
             </div>
             <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
@@ -136,13 +136,13 @@
     </div>
 </section>
 <section class="location-section">
-    <h2 class="section-title">Our Location</h2>
+    <h2 class="section-title fw-bold">Lokasi Kami</h2>
     <div class="container">
         <div class="row g-4">
             <div class="col-12 col-md-6 d-flex justify-content-center">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2022985.959027739!2d111.946738675!3d-7.984014430640749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3ffbdb187365b%3A0x7f1a8094e56082de!2sMASJID%20NURUL%20HASAN%20(LDII)!5e0!3m2!1sid!2sid!4v1745775212168!5m2!1sid!2sid"
-                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3946.705786132769!2d114.21306477501194!3d-8.43052639160883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjUnNDkuOSJTIDExNMKwMTInNTYuMyJF!5e0!3m2!1sen!2sid!4v1747487307280!5m2!1sen!2sid" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
@@ -159,7 +159,7 @@
 </section>
 <section class="faq-section py-5 bg-white">
     <div class="container">
-        <h2 class="section-title text-center mb-4">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+        <h2 class="section-title text-center mb-4">Pertanyaan yang Sering Diajukan</h2>
         <div class="accordion" id="faqAccordion">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="faqHeading1">

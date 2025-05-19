@@ -16,9 +16,9 @@ $routes->get('Detail_Layanan/Persalinan Normal', 'Detail_Layanan::layanan3');
 $routes->get('Detail_Layanan/Periksa Kehamilan', 'Detail_Layanan::layanan4');
 $routes->get('Detail_Layanan/KB dan Kontrasepsi', 'Detail_Layanan::layanan5');
 
-$routes->get('login', 'Auth::login');
+$routes->get('Login', 'Auth::login');
 $routes->post('/login/process', 'Auth::loginProcess');
 $routes->get('logout', 'Auth::logout');
-$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
+$routes->get('Dashboard', 'Dashboard::index', ['filter' => 'auth']);
 
 $routes->post('assets/uploads/(:segment)/(:num)', 'Upload::upload_gambar_beranda/$1/$2');

@@ -17,13 +17,16 @@ if (isset($gambarTentangKami[1])) {
 <section class="py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-8">
-                <p class="mb-2">
+            <div class="col-md-8" data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="100" data-aos-easing="ease-out">
+                <p class="mb-2" style="text-align: justify;">
                     Kami memiliki bidan berpengalaman dengan lebih dari <strong>30 tahun</strong> dedikasi
                     dalam pelayanan kesehatan ibu dan anak. Kami juga memiliki surat tanda registrasi sebagai bukti kompetensi dan legalitas praktik kebidanan.
+                    Dengan pengalaman panjang dan pemahaman mendalam terhadap kebutuhan setiap ibu dan anak, kami berkomitmen untuk memberikan pelayanan yang ramah, aman, dan profesional. 
+                    Kami percaya bahwa setiap ibu berhak mendapatkan perawatan terbaik selama masa kehamilan, persalinan, hingga pasca melahirkan. 
+                    Didukung dengan fasilitas yang memadai serta pendekatan yang humanis, kami siap mendampingi Anda dalam setiap tahap perjalanan menjadi ibu.
                 </p>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out">
                 <?php
                 if (isset($gambarTentangKami[0])) {
                     $gambar = $gambarTentangKami[0];
@@ -35,9 +38,9 @@ if (isset($gambarTentangKami[1])) {
     </div>
 </section>
 
-<section class="py-5 bg-light">
+<section class="py-5 bg-light" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="100">
     <div class="container">
-        <div class="p-4 border rounded-3 bg-white shadow-sm">
+        <div class="p-4 border rounded-3 bg-white shadow-sm" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="100">
             <h4 class="fw-bold">VISI & MISI</h4>
             <ol class="mt-3">
                 <li>Melakukan pelayanan kesehatan yang teritegrasi dan berkualitas</li>
@@ -51,7 +54,7 @@ if (isset($gambarTentangKami[1])) {
 </section>
 <section class="faq-section py-5 bg-white" id="faq">
     <div class="container">
-        <h2 class="section-title text-center mb-4">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+        <h2 class="section-title text-center mb-4">Pertanyaan yang Sering Diajukan</h2>
         <div class="accordion" id="accordionFAQ">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="faqHeadingOne">
