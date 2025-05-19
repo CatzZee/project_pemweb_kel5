@@ -67,6 +67,19 @@
                 <p>Kota Terjangkau</p>
             </div>
             <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-info-emphasis fw-bold"><span id="count1">0</span>+</h2>
+                <p>Pasien Dirawat</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-info-emphasis fw-bold"><span id="count2">0</span>+</h2>
+                <p>Harga Mulai Dari</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="text-info-emphasis fw-bold"><span id="count3">0</span>+</h2>
+                <p>Kota Terjangkau</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <h2 class="text-info-emphasis fw-bold"><span id="count4">0</span>+</h2>
                 <p>Pengalaman(Tahun)</p>
             </div>
@@ -142,6 +155,9 @@
             <div class="col-12 col-md-6 d-flex justify-content-center">
                 <div class="ratio ratio-16x9">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3946.705786132769!2d114.21306477501194!3d-8.43052639160883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjUnNDkuOSJTIDExNMKwMTInNTYuMyJF!5e0!3m2!1sen!2sid!4v1747487307280!5m2!1sen!2sid" 
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.2735019263012!2d114.21513048067008!3d-8.430349331980677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3ffbdb187365b%3A0x7f1a8094e56082de!2sMASJID%20NURUL%20HASAN%20(LDII)!5e0!3m2!1sid!2sid!4v1747276497943!5m2!1sid!2sid"
+
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>

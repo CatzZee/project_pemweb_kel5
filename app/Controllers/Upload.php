@@ -41,6 +41,7 @@ class Upload extends BaseController
                     ->update();
                 return redirect()->back()->with('success', 'Gambar Beranda berhasil diupload!');
                 
+                // ini untuk logika klw upload gambar tentang_kami
             } elseif ($folder == 'tentang_kami') {
                 $file->move($path, $namabaru, true);
                 $tentangKamiModel = new GambarTentangKamiModel();
@@ -69,6 +70,8 @@ class Upload extends BaseController
                     ->where('id', $id)
                     ->update();
                 return redirect()->back()->with('success', 'Gambar Jasa Layanan berhasil diupload!');
+                // ini logika untuk jasa layanan
+
             } elseif ($folder == 'detail_layanan') {
                 $file->move($path, $namabaru, true);
                 $detailLayananModel = new GambarDetailLayananModel();
