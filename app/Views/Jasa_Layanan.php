@@ -5,34 +5,38 @@
         <h2 class="fw-bold">Layanan Kami</h2>
         <p class="text-muted">Berikut adalah beberapa layanan unggulan dari Praktek Mandiri Bidan Ny. Anis Qori'ah</p>
     </div>
-    <section class="image-text-section py-5">
-        <div class="container">
-            <?php foreach ($gambarJasaLayanan as $i => $gambar): ?>
-                <div class="row align-items-center mb-5">
-                    <?php if ($i % 2 == 0): ?>
-                        <div class="col-md-6 order-md-1">
-                            <h2 class="fw-bold mb-2"><?= esc($gambar['foto']) ?></h2>
-                            <p class="text-muted mb-4"><?= esc($gambar['keterangan']) ?></p>
-                            <a href="<?= base_url('Detail_Layanan/' . $gambar['foto']) ?>" class="btn btn-dark me-2">Lihat Detail</a>
-                        </div>
-                        <div class="col-md-6 order-md-2">
-                            <img src="<?= base_url($gambar['path'] . $gambar['nama_file']) ?>" alt="Foto" class="img-fluid rounded">
-                        </div>
-                    <?php else: ?>
-                        <div class="col-md-6 order-md-1">
-                            <img src="<?= base_url($gambar['path'] . $gambar['nama_file']) ?>" alt="Foto" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-6 order-md-2">
-                            <h2 class="fw-bold mb-2"><?= esc($gambar['foto']) ?></h2>
-                            <p class="text-muted mb-4"><?= esc($gambar['keterangan']) ?></p>
-                            <a href="<?= base_url('Detail_Layanan/' . $gambar['foto']) ?>" class="btn btn-dark me-2">Lihat Detail</a>
-                        </div>
-                    <?php endif; ?>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </section>
 </section>
+<section class="image-text-section py-5">
+    <div class="container">
+        <?php foreach ($gambarJasaLayanan as $i => $gambar): ?>
+            <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="<?= $i * 100 ?>" data-aos-duration="800">
+                <?php if ($i % 2 == 0): ?>
+                    <div class="col-md-6 order-2 order-md-1">
+                        <h2 class="fw-bold mb-2"><?= esc($gambar['foto']) ?></h2>
+                        <p class="text-muted mb-4"><?= esc($gambar['keterangan']) ?></p>
+                        <a href="<?= base_url('Detail_Layanan/' . $gambar['foto']) ?>" class="btn btn-dark me-2">Lihat Detail</a>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2">
+                        <img src="<?= base_url($gambar['path'] . $gambar['nama_file']) ?>" alt="Foto" class="img-fluid rounded">
+                    </div>
+                    
+                <?php else: ?>
+                    <div class="col-md-6 order-1">
+                        <img src="<?= base_url($gambar['path'] . $gambar['nama_file']) ?>" alt="Foto" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 order-2">
+                        <h2 class="fw-bold mb-2"><?= esc($gambar['foto']) ?></h2>
+                        <p class="text-muted mb-4"><?= esc($gambar['keterangan']) ?></p>
+                        <a href="<?= base_url('Detail_Layanan/' . $gambar['foto']) ?>" class="btn btn-dark me-2">Lihat Detail</a>
+                    </div>
+                <?php endif; ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>
+
+
+
 
 <section class="faq-section py-5 bg-white">
     <div class="container">

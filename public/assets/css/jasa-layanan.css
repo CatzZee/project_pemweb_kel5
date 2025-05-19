@@ -28,11 +28,11 @@
     padding: 1rem;
 }
 
-.section-grid {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
-}
+  .section-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
   .section-title {
     font-size: 2rem;
     margin-bottom: 30px;

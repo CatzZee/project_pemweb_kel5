@@ -33,10 +33,10 @@ class Auth extends BaseController
                 $session->set('username', $user['username']);
                 return redirect()->to('/Dashboard');
             } else {
-                return redirect()->back()->with('error', 'Password salah');
+                return redirect()->back()->with('error', 'Password atau Username salah');
             }
         } else {
-            return redirect()->back()->with('error', 'Username tidak ditemukan');
+            return redirect()->back()->with('error', 'Password atau Username salah');
         }
     }
     

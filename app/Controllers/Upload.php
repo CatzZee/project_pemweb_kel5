@@ -56,8 +56,6 @@ class Upload extends BaseController
                     ->where('id', $id)
                     ->update();
                 return redirect()->back()->with('success', 'Gambar Tentang Kami berhasil diupload!');
-
-                // ini logika untuk jasa layanan
             } elseif ($folder == 'jasa_layanan') {
                 $file->move($path, $namabaru, true);
                 $jasaLayananModel = new GambarJasaLayananModel();
@@ -72,11 +70,18 @@ class Upload extends BaseController
                     ->where('id', $id)
                     ->update();
                 return redirect()->back()->with('success', 'Gambar Jasa Layanan berhasil diupload!');
-
                 // ini logika untuk jasa layanan
+
             } elseif ($folder == 'detail_layanan') {
                 $file->move($path, $namabaru, true);
                 $detailLayananModel = new GambarDetailLayananModel();
+                $namalama = $detailLayananModel->select('nama_file')
+                    ->where('id', $id)
+                    ->first();
+                $path_lama = FCPATH . 'assets/uploads' . '/' . $folder . '/' . $namalama['nama_file'];
+                if (file_exists($path_lama)) {
+                    unlink($path_lama);
+                }
                 $detailLayananModel->set('nama_file', $namabaru)
                     ->where('id', $id)
                     ->update();

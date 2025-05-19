@@ -227,42 +227,6 @@
                                 </td>
                             <?php endforeach; ?>
                             </tr>
-                            <!-- untuk ganti logo -->
-                            <?php
-                            foreach ($gambar_logo as $logo): ?>
-                                <tr>
-                                    <td> <?= $no++ ?> </td>
-                                    <td>
-                                        <img src="<?= base_url($logo['path'] . $logo['nama_file']) ?>" alt="<?= esc($logo['foto']) ?>" width="100" class="img-thumbnail">
-                                    </td>
-                                    <td> <?= esc($logo['foto']) ?> </td>
-                                    <td> Logo </td>
-                                    <td>
-                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?= esc($logo['nama_file']) ?>">Edit Gambar</button>
-                                        <div class="modal fade" id="<?= esc($logo['nama_file']) ?>" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="formModalLabel">Ganti Gambar</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <form action="<?= esc($logo['path'] . $logo['id']) ?>" method="post" enctype="multipart/form-data">
-                                                        <div class="modal-body">
-                                                            <input type="file" name="gambar" class="form-control" accept=".png, .jpg, .jpeg" required>
-                                                            <div class="form-text text-end text-muted">
-                                                                *Format gambar wajib: .jpg, .jpeg, .png
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="submit" class="btn btn-success">Upload</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                <?php endforeach; ?>
-                                </tr>
                 </tbody>
             </table>
         </div>

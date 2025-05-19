@@ -9,6 +9,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="icon" href="<?= base_url('assets/uploads/logo/favicon.ico') ?>" type="image/x-icon">
+    <script src="<?= base_url('assets/js/login.js') ?>"></script>
 </head>
 
 <header class="position-absolute top-0 start-0 p-3">
@@ -37,9 +38,14 @@
                                 <label for="username" class="form-label">Username</label>
                                 <input type="text" name="username" class="form-control" required>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 position-relative">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" name="password" class="form-control" required>
+                                <div class="input-group">
+                                    <input type="password" id="password" name="password" class="form-control" required>
+                                    <span class="input-group-text" onclick="togglePassword()" style="cursor: pointer;">
+                                        <i class="bi bi-eye" id="eyeIcon"></i>
+                                    </span>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Login</button>
                         </form>

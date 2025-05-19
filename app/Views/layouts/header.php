@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav align-items-center gap-2">
                         <li class="nav-item">
-                            <a class="nav-link nav-custom <?= (uri_string() == 'Beranda') ? 'active' : '' ?>" href="<?= base_url('Beranda') ?>">
+                            <a class="nav-link nav-custom <?= (uri_string() == 'Beranda' || uri_string() == '' ) ? 'active' : '' ?>" href="<?= base_url('Beranda') ?>">
                                 <i class="bi bi-house-door me-1"></i> Beranda
                             </a>
                         </li>

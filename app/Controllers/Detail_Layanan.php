@@ -9,7 +9,7 @@ class Detail_Layanan extends BaseController
         $gambarDetailLayanan = new GambarDetailLayananModel();
         $data = [
             'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
-            'page' => 'Layanan-Lahir-dan-Nifas',
+            'page' => 'detail-layanan',
             'title' => 'Layanan Lahir dan Nifas'
         ];
         return view('Detail_Layanan/layanan-lahir-nifas', $data);
@@ -20,7 +20,7 @@ class Detail_Layanan extends BaseController
         $gambarDetailLayanan = new GambarDetailLayananModel();
         $data = [
             'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
-            'page' => 'Layanan-Persalinan-Normal',
+            'page' => 'detail-layanan',
             'title' => 'Layanan Persalinan Normal'
         ];
         return view('Detail_Layanan/layanan-salin-normal', $data);
@@ -30,7 +30,7 @@ class Detail_Layanan extends BaseController
         $gambarDetailLayanan = new GambarDetailLayananModel();
         $data = [
             'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
-            'page' => 'Layanan-Kehamilan',
+            'page' => 'detail-layanan',
             'title' => 'Layanan Kehamilan'
         ];
         return view('Detail_Layanan/layanan-hamil', $data);
@@ -40,7 +40,7 @@ class Detail_Layanan extends BaseController
         $gambarDetailLayanan = new GambarDetailLayananModel();
         $data = [
             'gambarDetailLayanan' => $gambarDetailLayanan->findAll(),
-            'page' => 'Layanan-KB-dan-Kontrasepsi',
+            'page' => 'detail-layanan',
             'title' => 'Layanan KB dan Kontrasepsi'
         ];
         return view('Detail_Layanan/layanan-KB-kontrasepsi', $data);

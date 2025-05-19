@@ -16,7 +16,7 @@
     </main>
 </section>
 <section class="section-deskripsi py-5">
-    <div class="container d-flex flex-column flex-md-row align-items-center gap-4">
+    <div class="container d-flex flex-column flex-md-row align-items-center gap-4" data-aos="fade-up" data-aos-duration="1000">
         <?php
         if (isset($gambarDetailLayanan[5])) {
             $gambar = $gambarDetailLayanan[5];
@@ -42,7 +42,7 @@
 <section class="jadwal-harga py-5 bg-light">
     <div class="container">
         <div class="row justify-content-center g-4">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos= "fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <div class="card shadow-sm h-100">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">Bidan Ny. Anis Qori'ah</h5>
@@ -54,12 +54,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <div class="card shadow-sm h-100">
                     <div class="card-body text-center d-flex flex-column justify-content-center">
                         <p class="fw-bold mb-2">Harga Mulai dari</p>
                         <div class="harga-range mb-2">
-                            Rp30.000 <br>–<br> Rp100.000
+                            Rp50.000 <br>–<br> Rp75.000
                         </div>
                         <small class="text-muted">*Harga sesuai jenis layanan</small>
                     </div>
